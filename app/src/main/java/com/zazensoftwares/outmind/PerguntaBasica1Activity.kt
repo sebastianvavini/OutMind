@@ -1,5 +1,6 @@
 package com.zazensoftwares.outmind
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -22,6 +23,8 @@ class PerguntaBasica1Activity : AppCompatActivity(), View.OnClickListener {
     }
 
     fun avancar(){
-
+            var intencao = Intent(this, NivelConscienciaActivity::class.java)
+        startActivity(intencao)
+        finish()
     }
 }
