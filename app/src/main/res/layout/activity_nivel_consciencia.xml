@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NivelConscienciaActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/root_layout_pergunta2"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <RadioGroup
+            android:id="@+id/radio_group_pergunta1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/titulo_pergunta1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quanto porcento de atanção você da ao Presente?"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:id="@+id/zero_dez"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 a 10 %"
+                />
+
+            <RadioButton
+                android:id="@+id/dez_vinte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 a 20 %"
+                />
+
+            <RadioButton
+                android:id="@+id/vinte_quarenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 a 40 %"
+                />
+
+            <RadioButton
+                android:id="@+id/quarenta_sessenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40 a 60 %"
+                />
+
+            <RadioButton
+                android:id="@+id/sessenta_oitenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60 a 80 %"
+                />
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_avancar_pergunta3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Avançar"
+        app:layout_constraintTop_toBottomOf="@+id/root_layout_pergunta2"
+        app:layout_constraintStart_toStartOf="@+id/root_layout_pergunta2"
+        app:layout_constraintEnd_toEndOf="@+id/root_layout_pergunta2"
+
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
