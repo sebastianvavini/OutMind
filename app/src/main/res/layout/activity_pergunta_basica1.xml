@@ -35,21 +35,21 @@
             android:textSize="20sp"/>
 
         <RadioButton
-            android:id="@+id/bem"
+            android:id="@+id/radio_bem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Bem"
             />
 
         <RadioButton
-            android:id="@+id/medio"
+            android:id="@+id/radio_medio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Médio"
             />
 
         <RadioButton
-            android:id="@+id/Mal"
+            android:id="@+id/radio_mal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Mal"
@@ -57,6 +57,7 @@
 
 
     </RadioGroup>
+
 
 
 </LinearLayout>
