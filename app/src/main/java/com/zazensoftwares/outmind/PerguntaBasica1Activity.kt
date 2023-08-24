@@ -39,7 +39,7 @@ class PerguntaBasica1Activity : AppCompatActivity(), View.OnClickListener {
     }
 
     fun avancar(){
-        SharedData(this).storeString("escolha", "treta")
+
         var intencao = Intent(this, NivelConscienciaActivity::class.java)
         startActivity(intencao)
         //finish()

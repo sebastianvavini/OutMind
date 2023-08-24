@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.zazensoftwares.outmind.databinding.ActivityNivelConscienciaBinding
+import com.zazensoftwares.outmind.shared.SharedData
 
 class NivelConscienciaActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -13,9 +14,9 @@ class NivelConscienciaActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         binding=ActivityNivelConscienciaBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        dormiuComo = intent.getStringExtra("escolha").toString()
+        dormiuComo = SharedData (this).getString("escolha")
 
-       binding.textViewDormiu.text=intent.getStringExtra("escolha").toString()
+       binding.textViewDormiu.text=dormiuComo
 
        // binding.buttonAvancarPergunta3.setOnClickListener(this)
 
