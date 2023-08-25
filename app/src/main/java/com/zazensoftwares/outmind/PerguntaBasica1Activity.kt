@@ -15,8 +15,10 @@ class PerguntaBasica1Activity : AppCompatActivity(), View.OnClickListener {
         binding= ActivityPerguntaBasica1Binding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.buttonAvancarPergunta2.setOnClickListener(this)
+
         binding.radioBem.setOnClickListener(this)
         binding.radioMedio.setOnClickListener(this)
+        binding.radioMal.setOnClickListener(this)
     }
 
     override fun onClick(p: View) {
